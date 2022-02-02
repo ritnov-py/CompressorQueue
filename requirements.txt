@@ -2,5 +2,5 @@ aiohttp
 python-decouple
 psutil
 tgcrypto
-https://github.com/LonamiWebs/Telethon/archive/master.zip
+telethon
 html_telegraph_poster
