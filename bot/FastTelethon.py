@@ -20,10 +20,12 @@ from typing import (
     Union,
 )
 
-from telethon import TelegramClient, helpers, utils
+from telethon import TelegramClient, helpers, utils, events, sync, connection, functions, types
 from telethon.crypto import AuthKey
 from telethon.network import MTProtoSender
 from telethon.tl.alltlobjects import LAYER
+from telethon.errors import FloodWaitError
+from telethon.tl.types import InputPhoneContact
 from telethon.tl.functions import InvokeWithLayerRequest
 from telethon.tl.functions.auth import (
     ExportAuthorizationRequest,
